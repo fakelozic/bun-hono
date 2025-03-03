@@ -3,8 +3,8 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "start": "bun index.ts",
-    "dev": "bun --watch index.ts"
+    "start": "bun server/index.ts",
+    "dev": "bun --watch server/index.ts"
   },
   "private": true,
   "devDependencies": {
@@ -14,6 +14,8 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "hono": "^4.7.2"
+    "@hono/zod-validator": "^0.4.3",
+    "hono": "^4.7.2",
+    "zod": "^3.24.2"
   }
 }
